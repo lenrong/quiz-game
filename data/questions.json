@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Apa ibukota Indonesia?",
+        "options": ["Jakarta", "Bandung", "Surabaya", "Medan"],
+        "correctAnswer": "Jakarta"
+    },
+    {
+        "question": "Planet terdekat dari Matahari?",
+        "options": ["Venus", "Mars", "Mercury", "Bumi"],
+        "correctAnswer": "Mercury"
+    },
+    {
+        "question": "Siapa penemu gravitasi?",
+        "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
+        "correctAnswer": "Isaac Newton"
+    }
+]
