@@ -1,47 +1,72 @@
-// Game Logic
-const questionElement = document.getElementById('question');
-const optionsElement = document.getElementById('options');
-const timerElement = document.getElementById('timer');
-const scoreElement = document.getElementById('score');
-const startButton = document.getElementById('startButton');
-const nicknameInput = document.getElementById('nicknameInput');
-const gameElement = document.getElementById('game');
-const rankingList = document.getElementById('rankingList');
+document.addEventListener('DOMContentLoaded', () => {
+  // Variabel game
+  const startButton = document.getElementById('startButton');
+  const nicknameInput = document.getElementById('nicknameInput');
+  const gameContainer = document.getElementById('game');
+  let currentQuestionIndex = 0;
+  let score = 0;
+  let timerInterval;
 
-let currentQuestionIndex = 0;
-let score = 0;
-let timeLeft = 10;
-let timerInterval;
-let nickname = '';
-let questions = [];
-
-// Data ranking
-let ranking = JSON.parse(localStorage.getItem('ranking')) || [];
-
-function displayRanking() {
-    rankingList.innerHTML = ranking
-        .slice(0, 10)
-        .map((entry, index) => `<li>${index + 1}. ${entry.nickname} - ${entry.score}</li>`)
-        .join('');
-}
-
-function startGame() {
-    nickname = document.getElementById('nickname').value.trim();
+  // Fungsi start game
+  const startGame = async () => {
+    // Validasi nickname
+    const nickname = document.getElementById('nickname').value.trim();
     if (!nickname) {
-        alert("Masukkan nickname terlebih dahulu!");
-        return;
+      alert("Masukkan nickname terlebih dahulu!");
+      return;
     }
 
+    // Pastikan pertanyaan sudah terload
+    if (window.questions.length === 0) {
+      alert("Sedang memuat pertanyaan...");
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+
+    // Tampilkan game
     nicknameInput.style.display = 'none';
-    gameElement.style.display = 'block';
-    currentQuestionIndex = 0;
-    score = 0;
-    scoreElement.textContent = `Skor: ${score}`;
+    gameContainer.style.display = 'block';
+    
     loadQuestion();
-}
+  };
 
-// ... (seluruh fungsi game logic sebelumnya tetap sama) ...
+  // Fungsi load pertanyaan
+  const loadQuestion = () => {
+    const question = window.questions[currentQuestionIndex];
+    const questionElement = document.getElementById('question');
+    const optionsElement = document.getElementById('options');
 
-// Event listener
-startButton.addEventListener('click', startGame);
-displayRanking();
+    // Set pertanyaan
+    questionElement.textContent = question.question;
+    optionsElement.innerHTML = '';
+
+    // Buat opsi jawaban
+    question.options.forEach(option => {
+      const button = document.createElement('div');
+      button.className = 'option';
+      button.textContent = option;
+      button.addEventListener('click', () => checkAnswer(option));
+      optionsElement.appendChild(button);
+    });
+
+    startTimer();
+  };
+
+  // Fungsi timer
+  const startTimer = () => {
+    let timeLeft = 10;
+    const timerElement = document.getElementById('timer');
+    
+    timerInterval = setInterval(() => {
+      timeLeft--;
+      timerElement.textContent = `Waktu: ${timeLeft}`;
+      
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        handleTimeout();
+      }
+    }, 1000);
+  };
+
+  // Event listener
+  startButton.addEventListener('click', startGame);
+});
