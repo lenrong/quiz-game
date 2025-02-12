@@ -1,0 +1,19 @@
+/* Isi CSS sama dengan jawaban sebelumnya */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* ... (seluruh kode CSS sebelumnya tetap sama) ... */
