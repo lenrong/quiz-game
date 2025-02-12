@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    background: linear-gradient(135deg, #e0e4e8, #cfd4d9);
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -23,15 +23,33 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    max-width: 400px;
+    max-width: 450px;
     width: 90%;
-    animation: fadeIn 0.8s ease-out;
+    position: relative; /* Tambahkan posisi relatif */
 }
 
-/* Efek saat hover */
+/* Efek hover */
 .container:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field */
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 12px; /* Tambahkan jarak */
+}
+
+/* Efek ketika input difokuskan */
+input:focus {
+    border: 2px solid #3498db;
+    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
 }
 
 /* Tombol */
@@ -47,6 +65,7 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
     outline: none;
+    margin-bottom: 15px; /* Tambahkan jarak */
 }
 
 /* Efek hover pada tombol */
@@ -62,32 +81,12 @@ button:active {
     box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
 }
 
-/* Input */
-input {
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    width: 100%;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
+/* Top 10 Ranking */
+.rank-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2c3e50;
 }
-
-/* Efek ketika input difokuskan */
-input:focus {
-    border: 2px solid #3498db;
-    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
-}
-
-/* Animasi masuk */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
