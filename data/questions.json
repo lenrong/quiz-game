@@ -13,5 +13,155 @@
         "question": "Siapa penemu gravitasi?",
         "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
         "correctAnswer": "Isaac Newton"
+    },
+    {
+        "question": "Apa ibu kota pertama Indonesia setelah merdeka?",
+        "options": ["Jakarta", "Yogyakarta", "Surabaya", "Bandung"],
+        "correctAnswer": "Yogyakarta"
+    },
+    {
+        "question": "Pulau manakah yang paling besar di Indonesia?",
+        "options": ["Jawa", "Kalimantan", "Sumatra", "Sulawesi"],
+        "correctAnswer": "Kalimantan"
+    },
+    {
+        "question": "Siapakah Presiden Indonesia yang pertama kali terpilih lewat Pemilu langsung?",
+        "options": ["Soeharto", "B.J. Habibie", "Megawati Soekarnoputri", "Susilo Bambang Yudhoyono"],
+        "correctAnswer": "Susilo Bambang Yudhoyono"
+    },
+    {
+        "question": "Di provinsi manakah Danau Toba berada?",
+        "options": ["Sumatra Barat", "Sumatra Utara", "Riau", "Aceh"],
+        "correctAnswer": "Sumatra Utara"
+    },
+    {
+        "question": "Lagu kebangsaan Indonesia adalah...",
+        "options": ["Indonesia Pusaka", "Indonesia Raya", "Garuda Pancasila", "Bagimu Negeri"],
+        "correctAnswer": "Indonesia Raya"
+    },
+    {
+        "question": "Hewan khas yang hanya bisa ditemukan di Pulau Komodo adalah…",
+        "options": ["Anoa", "Badak bercula satu", "Komodo", "Orangutan"],
+        "correctAnswer": "Komodo"
+    },
+    {
+        "question": "Tahun berapakah Indonesia merdeka?",
+        "options": ["1940", "1942", "1945", "1950"],
+        "correctAnswer": "1945"
+    },
+    {
+        "question": "Apa nama kerajaan Hindu-Buddha terbesar di Nusantara?",
+        "options": ["Majapahit", "Sriwijaya", "Kutai", "Tarumanegara"],
+        "correctAnswer": "Majapahit"
+    },
+    {
+        "question": "Apa nama perjanjian yang mengakui kedaulatan Indonesia oleh Belanda?",
+        "options": ["Perjanjian Linggarjati", "Perjanjian Renville", "Konferensi Meja Bundar", "Perjanjian Giyanti"],
+        "correctAnswer": "Konferensi Meja Bundar"
+    },
+    {
+        "question": "Apa nama tarian tradisional dari Bali?",
+        "options": ["Tari Saman", "Tari Piring", "Tari Kecak", "Tari Serampang Dua Belas"],
+        "correctAnswer": "Tari Kecak"
+    },
+    {
+        "question": "Apa kepanjangan dari ASN?",
+        "options": ["Aparatur Sipil Negara", "Asisten Sipil Nasional", "Aparatur Sipil Negeri", "Asosiasi Sipil Negara"],
+        "correctAnswer": "Aparatur Sipil Negara"
+    },
+    {
+        "question": "Instansi yang mengelola penerimaan CPNS adalah…",
+        "options": ["Kemenkeu", "BKN", "KPK", "DPR"],
+        "correctAnswer": "BKN"
+    },
+    {
+        "question": "Jabatan tertinggi dalam birokrasi PNS adalah…",
+        "options": ["Sekretaris Daerah", "Kepala Dinas", "Sekretaris Jenderal", "Presiden"],
+        "correctAnswer": "Presiden"
+    },
+    {
+        "question": "Golongan PNS tertinggi adalah…",
+        "options": ["I", "II", "III", "IV"],
+        "correctAnswer": "IV"
+    },
+    {
+        "question": "Apa nama tes yang harus dilalui untuk menjadi CPNS?",
+        "options": ["TPA", "TKD", "TOEFL", "GMAT"],
+        "correctAnswer": "TKD"
+    },
+    {
+        "question": "CPNS harus mengikuti masa percobaan selama…",
+        "options": ["3 bulan", "6 bulan", "1 tahun", "2 tahun"],
+        "correctAnswer": "1 tahun"
+    },
+    {
+        "question": "PNS bisa pensiun pada usia…",
+        "options": ["50 tahun", "55 tahun", "58 tahun", "60 tahun"],
+        "correctAnswer": "58 tahun"
+    },
+    {
+        "question": "Apa yang dimaksud dengan NIP?",
+        "options": ["Nomor Induk Pegawai", "Nomor Identitas Pegawai", "Nomor Identifikasi Pekerja", "Nomor Induk Pekerja"],
+        "correctAnswer": "Nomor Induk Pegawai"
+    },
+    {
+        "question": "Berapa lama masa kerja minimal agar seorang PNS bisa mendapatkan pensiun?",
+        "options": ["5 tahun", "10 tahun", "15 tahun", "20 tahun"],
+        "correctAnswer": "20 tahun"
+    },
+    {
+        "question": "Siapakah yang berwenang menetapkan kenaikan gaji PNS?",
+        "options": ["DPR", "Presiden", "Menteri Keuangan", "Gubernur"],
+        "correctAnswer": "Presiden"
+    },
+    {
+        "question": "Apa yang naik tapi tidak pernah turun?",
+        "options": ["Balon", "Usia", "Pesawat", "Layang-layang"],
+        "correctAnswer": "Usia"
+    },
+    {
+        "question": "Apa yang punya gigi tapi tidak bisa menggigit?",
+        "options": ["Harimau", "Garpu", "Sisir", "Semangka"],
+        "correctAnswer": "Sisir"
+    },
+    {
+        "question": "Kota apa yang ada di dalam air?",
+        "options": ["Jakarta", "Palembang", "Surabaya", "Kota ikan"],
+        "correctAnswer": "Kota ikan"
+    },
+    {
+        "question": "Apa yang lebih besar dari matahari tetapi tidak punya massa?",
+        "options": ["Bulan", "Galaksi", "Bayangan", "Bintang"],
+        "correctAnswer": "Bayangan"
+    },
+    {
+        "question": "Apa yang bisa dipecahkan tanpa disentuh?",
+        "options": ["Telur", "Gelas", "Janji", "Batu"],
+        "correctAnswer": "Janji"
+    },
+    {
+        "question": "Aku memiliki ekor tapi bukan hewan, apakah aku?",
+        "options": ["Ular", "Layang-layang", "Cacing", "Buaya"],
+        "correctAnswer": "Layang-layang"
+    },
+    {
+        "question": "Aku selalu di tengah malam, tetapi tidak pernah di pagi hari. Apa aku?",
+        "options": ["Bulan", "Huruf L", "Kegelapan", "Jam"],
+        "correctAnswer": "Huruf L"
+    },
+    {
+        "question": "Aku memiliki banyak jari tapi tidak bisa memegang, apakah aku?",
+        "options": ["Sarung tangan", "Boneka", "Robot", "Topeng"],
+        "correctAnswer": "Sarung tangan"
+    },
+    {
+        "question": "Aku lebih berat jika kosong daripada jika terisi. Apa aku?",
+        "options": ["Ember", "Balon", "Kantong plastik", "Kantong kertas"],
+        "correctAnswer": "Kantong kertas"
+    },
+    {
+        "question": "Jika 5 ayam bertelur 5 butir dalam 5 hari, berapa banyak telur yang dihasilkan oleh 10 ayam dalam 10 hari?",
+        "options": ["10", "20", "25", "30"],
+        "correctAnswer": "20"
     }
 ]
