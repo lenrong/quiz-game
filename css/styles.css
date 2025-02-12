@@ -25,7 +25,7 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     max-width: 450px;
     width: 90%;
-    position: relative; /* Tambahkan posisi relatif */
+    position: relative;
 }
 
 /* Efek hover */
@@ -43,7 +43,7 @@ input {
     font-size: 1rem;
     outline: none;
     transition: all 0.3s ease;
-    margin-bottom: 12px; /* Tambahkan jarak */
+    margin-bottom: 12px;
 }
 
 /* Efek ketika input difokuskan */
@@ -65,7 +65,7 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
     outline: none;
-    margin-bottom: 15px; /* Tambahkan jarak */
+    margin-bottom: 15px;
 }
 
 /* Efek hover pada tombol */
@@ -86,8 +86,47 @@ button:active {
     position: absolute;
     top: 15px;
     right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #2c3e50;
+    width: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1;
 }
 
+/* Style untuk list ranking */
+.rank-container ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rank-container li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.rank-container li:last-child {
+    border-bottom: none;
+}
+
+/* Scrollbar styling */
+.rank-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.rank-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.rank-container::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 3px;
+}
